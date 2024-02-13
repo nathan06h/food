@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./theme_icons/themify-icons/themify-icons.css">
+    <link rel="icon" type="image/x-icon" href="./img-icon/shop-home.ico">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <title>LA Shop </title>
+</head>
+<body>
+    <!-- HEAD -->
+    <header id="head">
+        <div class="head__container">
+            <div class="head__greeting-list row grid wide">
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-check"></i></span>
+                    <p class="greeting-items-text">購入時に魅力的なオファーが多数ある価格</p>
+                </div>
+
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                    <p class="greeting-items-text">全国送料無料＆迅速にお届けします</p>
+                </div>
+
+                <div class="head__greeting-items c-4">
+                    <span class="greeting-items-icon"><i class="fa-solid fa-star"></i></span>
+                    <p class="greeting-items-text">承認された規格を満たす幅広い製品</p>
+                </div>
+            </div>
+            <div class="head__box-bg">
+                <div class="head__box grid wide">
+                    <div class="nav__box">
+                        <div class="nav__list-title">
+                            <span class="nav__list-open" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                            <h2 class="nav__list-text">メーニュ</h2>
+                        </div>
+                        <ul class="nav__list">
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-gear"></i></span><a href="./products_fruits.html" class="nav__list-link">野菜・果物</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-heart"></i></span><a href="./meatSeafood.html" class="nav__list-link">肉・海鮮</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-circle-plus"></i></span><a href="./eggRice.html" class="nav__list-link">卵</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-solid fa-bowl-rice"></i></span><a href="./eggRice.html" class="nav__list-link">お米</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-leaf"></i></span><a href="./products_fruits2.html" class="nav__list-link">果物</a></li>
+                            <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-shrimp"></i></span><a href="./meatSeafood.html" class="nav__list-link">海鮮</a></li>
+                        </ul>
+                    </div>
+                    <div class="head__left-box">
+                        <div class="head__logo">
+                            <a href="./index.html" class="head__logo-link">
+                                <img src="./imgs/header-logo.png" alt="Mini Mart"  class="head__logo-img">
+                            </a>
+                        </div>
+                        <div class="head__input">
+                            <input type="text" class="head__input-search" placeholder="Search...">
+                            <span class="head__search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+    
+                    <div class="head__right-box">
+                        <div class="right__country-box">
+                            <div class="right__country-img-box">
+                                <img src="./img-icon/Flag_of_Japan.svg.webp" alt="Japan" class="right__country-img">
+                            </div>
+
+                            <a href="#" class="right__country-text">日本</a>
+                            <span class="right__country-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            <div class="right__country-sub-box">
+                                <div class="right__country-sub-el">
+                                    <img src="./imgs/english-flag-en.jpg" alt="English" class="right__country-img-el">
+                                </div>
+                                <a href="#" class="right__country-sub-text">English</a>
+                            </div>
+                        </div>
+    
+                        <div class="right__login-box">
+                            <span class="right__login-user"><i class="fa-solid fa-user"></i></span>
+                            <div class="right__login-sub-box">
+                                <a href="./login.html" class="right__login-login">ログイン</a>
+                                <a href="./register.html" class="right__login-login">登録する</a>
+                            </div>
+                        </div>
+    
+                        <div class="right__cart-box">
+                            <span class="right__cart-icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                            <a class="right__cart-text">カート (0)</a>
+
+                            <div class="right__cart-list-item">
+                                <p class="right__cart-item">カートに商品がありません</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="head__mobile-nav">
+                        <span class="head__mobile-menu-icon"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div id="content">
+        <div id="slider-wrapper">
+            <div class="slider-main fade">
+                <img src="./imgs/food-slider_5.jpg" alt="">
+                <img src="./imgs/food-slider_8.jpg" alt="">
+                <img src="./imgs/food-slider_6.jpg" alt="">
+            </div>
+            <span id="prev"><i class="fa-solid fa-angle-left"></i></span>
+            <span id="next"><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <!-- <div id="slider__box">
+            <img src="./imgs/food-slider_5.jpg" alt="" class="slider-img">
+            <span onclick="prev()" class="prev"><i class="fa-solid fa-angle-left"></i></span>
+            <span onclick="next()" class="next"><i class="fa-solid fa-angle-right"></i></span>
+        </div> -->
+          <div class="content__container grid wide">
+            <div class="content__head-content">
+                <div class="content__head-imgs c-4"><img src="./imgs/body_food-6.jpg" alt="" class="content__head-img"></div>
+                <div class="content__head-imgs c-4"><img src="./imgs/body_food-7.jpg" alt="" class="content__head-img"></div>
+                <div class="content__head-imgs c-4"><img src="./imgs/body_food-9.jpg" alt="" class="content__head-img"></div>
+            </div>
+            <div class="content__best-selling-box">
+                <h2 class="content__best-selling">製品の販売</h2>
+                <div class="content__products-arrow">
+                    <span id="slider-left" class="content__arrow-prev"><i class="fa-solid fa-circle-left"></i></span>
+                    <span id="slider-right" class="content__arrow-next"><i class="fa-solid fa-circle-right"></i></span>
+                </div>
+            </div>
+            <div class="content__products-box">
+                <ul class="content__products-list">
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box sale-39">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food1.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">アスパラ</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">198 円</p>
+                                <p class="content__prime-price">396 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <!-- <div class="content__add-cart-box"> -->
+                                <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span>  <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food5.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">スイカ</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">328 円</p>
+                                <p class="content__prime-price">656 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box sale-36">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food2.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">青いリンゴ</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">690 円</p>
+                                <p class="content__prime-price">890 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food6.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">ミントバジル</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">198 円</p>
+                                <p class="content__prime-price">335　円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+                    
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food3.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">ほうれん草</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">398 円</p>
+                                <p class="content__prime-price">728 円 $</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food7.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">ジュート野菜</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">398 円</p>
+                                <p class="content__prime-price">698 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>   
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food4.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">新鮮なエビ</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">1098 円</p>
+                                <p class="content__prime-price">1480 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food8.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">グアバ</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">398 円</p>
+                                <p class="content__prime-price">598 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food9.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">サポディラ</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">450 円</p>
+                                <p class="content__prime-price">790 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food10.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">お米</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">790 円</p>
+                                <p class="content__prime-price">980 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food11.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">牛肉</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">980 円</p>
+                                <p class="content__prime-price">1250 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food12.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">ぶどう</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">780 円</p>
+                                <p class="content__prime-price">880 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+
+                    <li class="c-3 content__products-list-item" draggable="false">
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food13.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">カイコのさなぎ</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">350 円</p>
+                                <p class="content__prime-price">480 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+
+                            <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                        
+                        <div class="content__products-sub-box">
+                            <div class="content__products-img-box">
+                                <img src="./imgs/body-food14.jpg" alt="" class="content__products-img">
+                            </div>
+                            <a href="" class="content__products-text">牛ロース</a>
+                            <div class="content__products-price-box">
+                                <p class="content__sale-price">880 円</p>
+                                <p class="content__prime-price">1250 円</p>
+                            </div>
+                            <div class="content__products-icons-box">
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                            </div>
+                            <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Vegetable -->
+            <div class="content__vegetable-wrapper">
+                <div class="content__vegetable-box">
+                    <h2 class="content__vegetable">野菜・果物</h2>
+                    
+                    <a href="./products_fruits.html" class="content__vegetable-seemore">もっと見る <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <div class="content__products-box">
+                    <ul class="content__vegetable-products-list">
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-39">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food1.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">アスパラ</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">198 円</p>
+                                    <p class="content__prime-price">396 円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <!-- <div class="content__add-cart-box"> -->
+                                    <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food5.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">スイカ</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">328　円</p>
+                                    <p class="content__prime-price">656　円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>
+                        
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-36">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food2.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">青いリンゴ</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">690円</p>
+                                    <p class="content__prime-price">890円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>   
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food6.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">ミントバジル</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">198円</p>
+                                    <p class="content__prime-price">335円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>                
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Meat-Seafood -->
+            <div class="content__vegetable-wrapper">
+                <div class="content__vegetable-box">
+                    <h2 class="content__vegetable">肉・海鮮</h2>
+                    
+                    <a href="./meatSeafood.html" class="content__vegetable-seemore">もっと見る <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <div class="content__products-box">
+                    <ul class="content__vegetable-products-list">
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-39">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food4.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">新鮮なエビ</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">1098円</p>
+                                    <p class="content__prime-price">1480円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <!-- <div class="content__add-cart-box"> -->
+                                    <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                                <!-- </div> -->
+                            </div>
+
+                        </li>
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food13.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">カイコのサナギ</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">350円</p>
+                                    <p class="content__prime-price">480円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                            
+                        </li>
+                        
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-36">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food11.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">牛肉</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">890円</p>
+                                    <p class="content__prime-price">1250円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>   
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/body-food14.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">牛ロース</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">880円</p>
+                                    <p class="content__prime-price">1250円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>                
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Egg -->
+            <div class="content__vegetable-wrapper">
+                <div class="content__vegetable-box">
+                    <h2 class="content__vegetable">卵・お米</h2>
+                    
+                    <a href="./eggRice.html" class="content__vegetable-seemore">もっと見る <i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <div class="content__products-box">
+                    <ul class="content__vegetable-products-list">
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-39">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg1.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">玄米</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">1280円</p>
+                                    <p class="content__prime-price">1480円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+                                <!-- <div class="content__add-cart-box"> -->
+                                    <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg2.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">有機米</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">1280円</p>
+                                    <p class="content__prime-price">1480円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        
+                        </li>
+                        
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box sale-36">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg3.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">紫色の有機米</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">1280円</p>
+                                    <p class="content__prime-price">1480円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する<span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+    
+                        </li>   
+    
+                        <li class="c-3 content__products-list-item">
+                            <div class="content__products-sub-box">
+                                <div class="content__products-img-box">
+                                    <img src="./imgs/egg4.jpg" alt="" class="content__products-img">
+                                </div>
+                                <a href="" class="content__products-text">ハーブ有機米</a>
+                                <div class="content__products-price-box">
+                                    <p class="content__sale-price">1280円</p>
+                                    <p class="content__prime-price">1480円</p>
+                                </div>
+                                <div class="content__products-icons-box">
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star"></i></span>
+                                    <span class="content__products-icons"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                </div>
+    
+                                <button type="button" class="content__add-cart">カートに追加する <span class="content__cart-icon content__cart-icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> <span class="content__cart-icon"><i class="fa-solid fa-cart-shopping"></i></span></button>
+                            </div>
+                        </li>                
+                    </ul>
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+        <div class="content__list-item-bg">
+            <div class="content__list-item-wrapper grid wide">
+                <h1 class="content__list-item-view">カテゴリ別に見る</h1>
+
+            <ul class="content__list-item-category">
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/rau-cu-qua.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./products_fruits.html" class="content__list-item-link">野菜・果物</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/beff.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./meatSeafood.html" class="content__list-item-link">肉・海鮮</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/gao.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./eggRice.html" class="content__list-item-link">お米</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/rau-cu.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./products_fruits2.html" class="content__list-item-link">野菜</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/traiCay.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="" class="content__list-item-link">果物</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/nam2.jpg" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="" class="content__list-item-link">椎茸</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/thit.jpg" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="./meatSeafood.html" class="content__list-item-link">肉</a>
+                </li>
+                <li class="c3">
+                    <div class="content__list-item-img-box">
+                        <img src="./imgs/egg.png" alt="" class="content__list-item-img">
+                    </div>
+                    <a href="" class="content__list-item-link">卵</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer__advice-wrapper grid wide">
+            <h1 class="footer__advice-tips">役に立つ</h1>
+            <div class="footer__advice-list">
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/sale-paner.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">プロモーション-夕食が安い</a>
+                        <p class="footer__advice-text">大きくて興味深いサプライズ、非常に魅力的で超恐ろしいプロモーション、初めて…。</p>
+                    </div>
+                </div>
+
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/nau_an_ngon.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">きれいな食材で料理も上手に</a>
+                        <p class="footer__advice-text">食べることは人間の永遠の営みです。 以前はただよく食べるだけでしたが、今はよく食べる必要があります。 あとは食糧問題ですね…</p>
+                    </div>
+                </div>
+
+                <div class="footer__advice-item">
+                    <div class="footer__advice-img"><img src="./imgs/thuc_pham_sach.jpg" alt=""></div>
+                    <div class="footer__advice-text-box">
+                        <a href="" class="footer__advice-title">清潔な食べ物を選び、適切に調理する</a>
+                        <p class="footer__advice-text">食物は人間の生存と発達に不可欠な必要性です。 社会はますます進歩しており、...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bg-img">
+            <div class="footer__wrapper grid wide">
+                <div class="footer__wrapper-sub">
+                    <div class="footer__infor-col-1 c-3">
+                        <div class="footer__infor-logo">
+                            <a alt="" href=""><img src="./imgs/logo_footer.jpg" alt=""></a>
+                        </div>
+                        <p class="footer__infor-logo-text">ミニマートスーパーマーケットは健康をもたらす超クリーンなアイテムを提供します</p>
+                        <div class="footer__infor-logo-address">
+                            <span><i class="fa-solid fa-map-location"></i></span>
+                            <p>埼玉県川口市芝新町4-3第3本多103</p>
+                        </div>
+                        <div class="footer__infor-logo-phone">
+                            <span><i class="fa-solid fa-phone-volume"></i></span>
+                            <a href="tel:+070 9154 5410">070−9154−5410</a>
+                        </div>
+                        <div class="footer__infor-logo-email">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="mailto:thanh5280@gmail.com">thanh5280@gmail.com</a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__infor-col-2 c-3">
+                        <h3 class="footer__infor-account">アカウント</h3>
+                        <ul class="footer__infor-account-list">
+                            <li><a href="">ホーム</a></li>
+                            <li><a href="">導入</a></li>
+                            <li><a href="">製品</a></li>
+                            <li><a href="">ニュース</a></li>
+                            <li><a href="">連絡</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__infor-col-2 c-3">
+                        <h3 class="footer__infor-account">顧客サポート</h3>
+                        <ul class="footer__infor-account-list">
+                            <li><a href="">ホーム</a></li>
+                            <li><a href="">導入</a></li>
+                            <li><a href="">製品</a></li>
+                            <li><a href="">ニュース</a></li>
+                            <li><a href="">連絡</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__infor-col-4 c-3">
+                        <h3 class="footer__infor-send">メールを送る</h3>
+                        <label for="sendEmail">メールを送信してプロモーションを受け取る</label>
+                        <div class="footer__infor-input">
+                            <input type="text" id="sendEmail" name="sendEmail" placeholder="Your Email">
+                            <span><i class="fa-solid fa-paper-plane"></i></span>
+                        </div>
+                        <h4>私にメルを</h4>
+                        <div class="footer__infor-social">
+                            <span class="footer__social-google"><a href="https://www.google.com/"><i class="fa-brands fa-google-plus-g"></i></a></span>
+                            <span class="footer__social-twitter"><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></span>
+                            <span class="footer__social-facebook"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></span>
+                            <span class="footer__social-instagram"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="footer__last-text">© Copyright to <span>TT</span> | Provided by <span>Thanh</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+
+
+    <div id="modal-mobile">
+        <div class="modal-mobile-wrapper">
+            <div class="nav-mobile">
+                <div class="nav__list-title">
+                    <span class="nav__list-open" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                    <h2 class="nav__list-text">メーニュ</h2>
+                    <span class="nav-mobile-close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <ul class="nav__list nav__list-mobile">
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-gear"></i></span><a href="./products_fruits.html" class="nav__list-link">野菜・果物</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-heart"></i></span><a href="./meatSeafood.html" class="nav__list-link">肉。海鮮</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-circle-plus"></i></span><a href="./eggRice.html" class="nav__list-link">卵</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-solid fa-bowl-rice"></i></span><a href="./eggRice.html" class="nav__list-link">お米</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-leaf"></i></span><a href="./products_fruits2.html" class="nav__list-link">果物</a></li>
+                    <li><span class="nav__list-icons"><i class="fa-sharp fa-solid fa-shrimp"></i></span><a href="./meatSeafood.html" class="nav__list-link">海鮮</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div class="modal__block">
+            <button type="button" class="modal__close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal__main-block">
+                <div class="modal__left-box">
+                    <div class="modal__left-img"><img src="" alt="" class="modal__img"></div>
+                </div>
+    
+                <div class="modal__right-box">
+                    <p class="modal__right-name"></p>
+                    <p class="modal__right-text">カートに追加しました</p>
+                    <div class="modal__price-box">
+                        <p class="modal__sale-price"></p>
+                        <p class="modal__prime-price"></p>
+                    </div>
+                    <div class="modal__cart-information">
+                        <button type="button" class="modal__cart-btn-left"><span class="modal__cart-btn-icon"><i class="fa-solid fa-cart-shopping"></i></span><a href="./buyPage.html">View cart</a></button>
+                        <button type="button" class="modal__cart-btn-right"><a>ショッピングを続ける</a></button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/js.js" defer></script>
+
+</body>
+</html>
